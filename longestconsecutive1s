@@ -1,0 +1,15 @@
+ int ans = 0;
+        while(N)
+        {
+            int x = 0;
+            while(N & 1)
+            {
+                x ++;
+                N >>= 1;
+            }
+            ans = max(ans, x);
+            N >>= 1;
+        }
+        return ans;
+        }
+        };
